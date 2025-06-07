@@ -1,92 +1,106 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GeneratorImage - Acesso Vitalício</title>
+  <title>GeneratorImage IA – Criação de Imagens com Inteligência Artificial</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f8ff;
+      background: #f2f2f2;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
+
     .container {
-      max-width: 600px;
-      margin: auto;
-      padding: 40px 20px;
-      background-color: white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      background: white;
+      max-width: 500px;
+      padding: 30px;
       border-radius: 12px;
-      margin-top: 40px;
-    }
-    h1 {
-      color: #202020;
-      font-size: 28px;
-    }
-    p {
-      line-height: 1.7;
-      color: #333;
-    }
-    .botao {
-      display: block;
-      width: 100%;
-      background-color: #2a8cfd;
-      color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 15px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 18px;
-      margin-top: 20px;
-      cursor: pointer;
-      border: none;
     }
-    .pix-box {
-      background-color: #ecf3ff;
-      padding: 20px;
-      border-left: 5px solid #2a8cfd;
-      margin-top: 20px;
+
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 22px;
+      color: #27ae60;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #2980b9;
+    }
+
+    .pix-key {
+      background: #f6f6f6;
+      padding: 12px;
       border-radius: 8px;
+      font-size: 14px;
+      margin-top: 20px;
       word-break: break-word;
     }
-    .info {
-      font-size: 14px;
-      margin-top: 15px;
-      color: #555;
+
+    .whatsapp-button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🔓 Acesso Vitalício ao GeneratorImage</h1>
-    <p>Desbloqueie o acesso completo e vitalício à nossa ferramenta de geração de imagens com inteligência artificial. Crie imagens incríveis com um clique, sempre que quiser, sem mensalidade.</p>
+    <h1>GeneratorImage IA</h1>
+    <p>Gere imagens com inteligência artificial de forma vitalícia, com acesso imediato após o pagamento.</p>
+    <div class="price">Apenas R$ 35,00 (pagamento único)</div>
 
-    <p><strong>O que você vai receber:</strong></p>
-    <ul>
-      <li>✔️ Acesso vitalício à plataforma de geração de imagens</li>
-      <li>✔️ Suporte direto via WhatsApp</li>
-      <li>✔️ Atualizações futuras sem custo</li>
-    </ul>
+    <a class="button" href="https://picpay.me/marco.antonio.nista/35.0" target="_blank">Comprar com PicPay</a>
 
-    <div class="pix-box">
-      <strong>💳 Chave Pix:</strong><br/><br/>
-      <span id="pix-key">tonyzin6044101@gmail.com</span>
+    <div class="pix-key">
+      Ou pague via Pix usando a chave:<br/>
+      <strong>tonyzin6044101@gmail.com</strong>
     </div>
 
-    <button class="botao" onclick="copyPixKey()">📋 Copiar Chave Pix</button>
-    <a class="botao" style="background-color: #25d366;" href="https://wa.me/5561984846343?text=Olá!+Já+realizei+o+pagamento+do+GeneratorImage+e+quero+enviar+o+comprovante." target="_blank">📎 Enviar Comprovante via WhatsApp</a>
-
-    <p class="info">Após o pagamento de <strong>R$50,00</strong>, envie o comprovante para o WhatsApp e libere seu acesso. Entregas manuais em até 15 minutos.</p>
+    <a class="whatsapp-button" href="https://wa.me/5561984846343?text=Olá,%20já%20realizei%20o%20pagamento%20de%20R$35,%20segue%20o%20comprovante." target="_blank">
+      Enviar comprovante via WhatsApp
+    </a>
   </div>
-
-  <script>
-    function copyPixKey() {
-      const key = document.getElementById("pix-key").textContent;
-      navigator.clipboard.writeText(key).then(() => {
-        alert("Chave Pix copiada com sucesso! Agora cole no app do seu banco para pagar.");
-      });
-    }
-  </script>
 </body>
 </html>
